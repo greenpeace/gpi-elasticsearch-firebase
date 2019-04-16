@@ -14,11 +14,12 @@ The function triggers on upload of any file to Firebase project.
 
 ## Setting up
 
- 1. Create a Firebase project on the [Firebase Console](https://console.firebase.google.com).
- 2. You must have the Firebase CLI installed. If you don't have it install it with `npm install -g firebase-tools` and then configure it with `firebase login`.
- 3. Configure the CLI locally by using `firebase use --add` and select your project in the list.
- 4. Install dependencies locally by running: `cd functions; npm install --save request request-promise lodash; cd -` 
- 5. set the needed firebase config variables to connect to your elastic search server `firebase functions:config:set elasticsearch.username="user" elasticsearch.password="my_password" elasticsearch.url="http://<yoururl>/elasticsearch/`
+ 1. Setup ElasticSearch VM - Go to https://console.cloud.google.com/ and login with your Google account - go to the Cloud Launcher using the sidenav, search for ‘Elasticsearch’ (Inception!) and select the Bitnami image.
+ 2. Create a Firebase project on the [Firebase Console](https://console.firebase.google.com).
+ 3. You must have the Firebase CLI installed. If you don't have it install it with `npm install -g firebase-tools` and then configure it with `firebase login`.
+ 4. Configure the CLI locally by using `firebase use --add` and select your project in the list.
+ 5. Install dependencies locally by running: `cd functions; npm install --save request request-promise lodash; cd -` 
+ 6. set the needed firebase config variables to connect to your elastic search server `firebase functions:config:set elasticsearch.username="user" elasticsearch.password="my_password" elasticsearch.url="http://<yoururl>/elasticsearch/`
 
 ## Deploy and test
 
