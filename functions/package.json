@@ -15,5 +15,8 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
-  "private": true
+  "private": true,
+  "engines" : { 
+    "node": "8" 
+  }
 }
